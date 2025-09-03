@@ -307,7 +307,7 @@
  /* Responsive */
  @media (max-width: 600px) {
      .scoreboard {
-         margin-top: 50px;
+        margin-top: 35px
      }
 
      .game-area {
