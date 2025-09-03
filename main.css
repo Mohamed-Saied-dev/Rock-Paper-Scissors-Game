@@ -27,7 +27,6 @@
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.548);
      animation: animation1 0.8s ease forwards;
      transition: box-shadow 0.3s ease;
-     margin-bottom: 40px;
      width: 100%;
  }
 
@@ -92,13 +91,41 @@
      }
  }
 
- /* End Header Section*/
+ /* Game title */
+ .game-title {
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ .game-title h1 {
+     font-size: 30px;
+     font-weight: bold;
+     background: linear-gradient(90deg, #ff416c, #ff4b2b, #1fa2ff, #12d8fa, #a6ffcb);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     display: inline-block;
+     animation: titleAnimation 4s infinite linear;
+     letter-spacing: 2px;
+ }
+
+ @keyframes titleAnimation {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     100% {
+         background-position: 100% 50%;
+     }
+ }
+
+
  /* Scoreboard */
  .scoreboard {
      display: flex;
      justify-content: center;
      gap: 30px;
      margin-bottom: 20px;
+     margin-top: 90px;
      font-size: 18px;
      font-weight: bold;
      flex-wrap: wrap;
@@ -321,6 +348,11 @@
  }
 
  @media (max-width: 400px) {
+     .game-title h1 {
+         font-size: 18px;
+
+     }
+
      .game-side-choice {
          width: 50px;
          height: 50px;

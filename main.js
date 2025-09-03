@@ -19,6 +19,7 @@ const playAgainBtns = document.querySelectorAll(".play-again");
 const winMessage = document.querySelector(".win-message");
 const loseMessage = document.querySelector(".lose-message");
 const gameArea = document.querySelector(".game-area.main");
+const header = document.querySelector(".header-section");
 
 let winCount = localStorage.getItem("winCount") || 0;
 let loseCount = localStorage.getItem("loseCount") || 0;
@@ -36,6 +37,7 @@ reset.addEventListener("click", () => {
 playBtn.addEventListener("click", () => {
    startGame.classList.remove("disable");
    playBtn.classList.add("disable");
+   header.classList.add("disable");
 })
 
 playAgainBtns.forEach(btn => {
