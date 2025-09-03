@@ -98,7 +98,7 @@
  }
 
  .game-title h1 {
-     font-size: 30px;
+     font-size: 22px;
      font-weight: bold;
      background: linear-gradient(90deg, #ff416c, #ff4b2b, #1fa2ff, #12d8fa, #a6ffcb);
      -webkit-background-clip: text;
@@ -352,10 +352,6 @@
  }
 
  @media (max-width: 400px) {
-     .game-title h1 {
-         font-size: 18px;
-
-     }
 
      .game-side-choice {
          width: 50px;
