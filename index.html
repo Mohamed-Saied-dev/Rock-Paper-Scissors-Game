@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div class="header-section">
+    <div class="author-content">
+      <img src="photos/my-photo.png" alt="my photo" />
+      <div class="autor-text">
+        <h2 class="author-name">Mohamed Saied</h2>
+        <p class="about"> <span style="color: #7800ff">Rock • Paper • Scissors</span> Game</p>
+      </div>
+    </div>
+  </div>
+  <!-- Scoreboard -->
+  <div class="scoreboard">
+    <div class="scoreboard-wins">Wins: <span id="win-count">10</span></div>
+    <div class="scoreboard-losses">Losses: <span id="lose-count">5</span></div>
+    <button class="scoreboard-reset">Reset</button>
+  </div>
+
+  <!-- Mode Switcher -->
+  <button class="play">Play</button>
+
+  <!-- Round Points -->
+  <div class="start-game disable">
+    <div class="round-points">
+      <div class="round-points-player">You: <span id="player-points">0</span> / 3</div>
+      <div class="round-message" id="round-message"></div>
+      <div class="round-points-computer">Computer: <span id="computer-points">0</span> / 3</div>
+    </div>
+    <!-- Main Game Area -->
+
+    <div class="game-area main">
+      <!-- Player Side -->
+      <div class="game-side player-side">
+        <img src="photos/paper.png" alt="Paper" class="game-side-choice active" data-name="paper" id="player-paper">
+        <img src="photos/rock.png" alt="Rock" class="game-side-choice " data-name="rock" id="player-rock">
+        <img src="photos/scissors.png" alt="Scissors" class="game-side-choice " data-name="scissors"
+          id="player-scissors">
+      </div>
+
+      <!-- Computer Side -->
+      <div class="game-side computer-side">
+        <img src="photos/paper2.png" alt="Paper" class="game-side-choice" data-name="paper" id="computer-paper">
+        <img src="photos/rock2.png" alt="Rock" class="game-side-choice" data-name="rock" id="computer-rock">
+        <img src="photos/scissors2.png" alt="Scissors" class="game-side-choice" data-name="scissors"
+          id="computer-scissors">
+      </div>
+    </div>
+
+    <!-- Win Message -->
+
+    <div class="game-area win-message disable">
+      <button class="message play-again">Play again</button>
+      <div class="game-result message" id="game-result">Congratulations! You Won</div>
+      <img src="photos/cup.png" alt="Win-photo" style="width: 75%;">
+    </div>
+
+    <!-- Lose Message -->
+    <div class="game-area lose-message disable">
+      <button class="message play-again">Play again</button>
+      <div class="game-result message" id="game-result">You Lost This Round!</div>
+      <img src="photos/game over.png" alt="Win-photo" style="width: 100%">
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
