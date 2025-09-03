@@ -14,82 +14,85 @@
      align-items: center;
      min-height: 100vh;
  }
-/* Start Header Section */
+
+ /* Start Header Section */
 
 
-.header-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.548);
-    animation: animation1 0.8s ease forwards;
-    transition: box-shadow 0.3s ease;
-    margin-bottom: 40px;
-    width: 100%;
-}
+ .header-section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 20px 20px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.548);
+     animation: animation1 0.8s ease forwards;
+     transition: box-shadow 0.3s ease;
+     margin-bottom: 40px;
+     width: 100%;
+ }
 
-.header-section:hover {
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
-}
+ .header-section:hover {
+     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+ }
 
-.header-section .author-content {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    
-}
+ .header-section .author-content {
+     text-align: center;
+     display: flex;
+     align-items: center;
+     gap: 30px;
 
-.header-section .author-content img {
-    width: 90px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #00c6ff;
-    box-shadow: 0 0 10px rgba(0, 114, 255, 0.3);
-    margin-bottom: 5px;
-    transition: transform 0.3s ease;
-}
+ }
 
-.header-section .author-content img:hover {
-    transform: scale(1.08) rotate(2deg);
-}
+ .header-section .author-content img {
+     width: 90px;
+     height: 120px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 3px solid #00c6ff;
+     box-shadow: 0 0 10px rgba(0, 114, 255, 0.3);
+     margin-bottom: 5px;
+     transition: transform 0.3s ease;
+ }
 
-.header-section .author-content .author-name {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #0072ff;
+ .header-section .author-content img:hover {
+     transform: scale(1.08) rotate(2deg);
+ }
+
+ .header-section .author-content .author-name {
+     font-size: 1.3em;
+     font-weight: bold;
+     color: #0072ff;
      margin-bottom: 15px;
-}
+ }
 
-.header-section .author-content .about {
-    font-size: .8em;
-    color: #555;
-    background-color: #e6f0fa;
-    padding: 8px 15px;
-    border-radius: 20px;
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+ .header-section .author-content .about {
+     font-size: .8em;
+     color: #555;
+     background-color: #e6f0fa;
+     padding: 8px 15px;
+     border-radius: 20px;
+     display: inline-block;
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
 
-.header-section .author-content .about:hover {
-    background-color: #0072ff;
-    color: white;
-}
-@keyframes animation1 {
-  from {
-    opacity: 0;
-    transform: translateY(-150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+ .header-section .author-content .about:hover {
+     background-color: #0072ff;
+     color: white;
+ }
 
-/* End Header Section*/
+ @keyframes animation1 {
+     from {
+         opacity: 0;
+         transform: translateY(-150px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ /* End Header Section*/
  /* Scoreboard */
  .scoreboard {
      display: flex;
@@ -291,6 +294,30 @@
          justify-content: space-around;
          font-size: 16px;
      }
+
+     #player-paper.selected {
+         transform: translate(160%, 120%)
+     }
+
+     #computer-paper.selected {
+         transform: translate(-160%, 120%)
+     }
+
+     #player-rock.selected {
+         transform: translate(160%);
+     }
+
+     #computer-rock.selected {
+         transform: translate(-160%);
+     }
+
+     #player-scissors.selected {
+         transform: translate(160%, -120%)
+     }
+
+     #computer-scissors.selected {
+         transform: translate(-160%, -120%)
+     }
  }
 
  @media (max-width: 400px) {
@@ -305,15 +332,16 @@
      }
 
      .round-points {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        text-align: center;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         text-align: center;
      }
+
      .round-message {
-        order: 3;
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
+         order: 3;
+         grid-row: 2 / 3;
+         grid-column: 1 / 3;
      }
  }
 
