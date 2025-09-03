@@ -306,6 +306,10 @@
 
  /* Responsive */
  @media (max-width: 600px) {
+     .scoreboard {
+         margin-top: 50px;
+     }
+
      .game-area {
          width: 100%;
          padding: 15px;
