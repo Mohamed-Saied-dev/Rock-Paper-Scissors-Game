@@ -125,9 +125,10 @@ function display() {
 }
 
 function showGameArea(areaName) {
-   winMessage.classList.add("disable");
-   loseMessage.classList.add("disable");
-   gameArea.classList.add("disable");
+   const gameAreas = document.querySelectorAll(".game-area");
+   gameAreas.forEach(item => {
+      item.classList.add("disable");
+   })
    areaName.classList.remove("disable");
 }
 
