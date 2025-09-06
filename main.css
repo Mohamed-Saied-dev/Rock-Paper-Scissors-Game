@@ -349,6 +349,11 @@
      #computer-scissors.selected {
          transform: translate(-160%, -120%)
      }
+      .player-side .game-side-choice:hover {
+     transform: scale(1);
+     box-shadow: 0 0 0 ;
+     
+ }
  }
 
  @media (max-width: 400px) {
